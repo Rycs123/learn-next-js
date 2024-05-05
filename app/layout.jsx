@@ -1,14 +1,13 @@
 import React from "react";
-
-const layout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <html lang='en'>
       <head>
-        <title>Learn Next</title>
+        <title>Learn Next Js</title>
       </head>
       <body>{children}</body>
     </html>
   );
 };
 
-export default layout;
+export default Layout;
