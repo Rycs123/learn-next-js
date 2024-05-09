@@ -1,15 +1,17 @@
 name: Variabel
-
+run-name: my name is variabel
 on: [push]
-
+# events = on
 env:
   DAY_OF_WEEK: Monday
-
+# jobs
 jobs:
+  # nama job
   greeting_job:
     runs-on: ubuntu-latest
     env:
       Greeting: Hello
+    # Langkah-langkah yang harus dilakukan dalam pekerjaan ini.
     steps:
       - name: "Say Hello Mona it's Monday"
         if: ${{ env.DAY_OF_WEEK == 'Monday' }}
