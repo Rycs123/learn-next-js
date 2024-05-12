@@ -15,7 +15,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: dist-without-markdown
+          name: dist-without-markdownn
           path: |
             dist
             !dist/**/*.md
